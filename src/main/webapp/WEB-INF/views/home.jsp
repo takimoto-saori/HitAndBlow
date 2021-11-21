@@ -10,7 +10,7 @@
 <h1>
 	Hello world!
 </h1>
-<h2><a href="top">Hit and Blowゲームへ</a></h2>
+<h2><a href="top">Hit and Blowゲームページへ</a></h2>
 <P>  The time on the server is ${serverTime}. </P>
 </body>
 </html>
