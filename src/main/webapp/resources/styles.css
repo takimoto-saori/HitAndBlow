@@ -1,0 +1,53 @@
+body {
+	font-family:"Yu Gothic", "メイリオ", "MS PGothic", sans-serif;
+	background-image:url('b052.jpg');
+}
+h1 {
+	color: #4169e1;
+	font-weight: bold;
+	text-align: center;
+}
+h2 {
+	font-weight: normal;
+	text-align: center;
+}
+p {
+	text-align: center;
+}
+table {
+	border-collapse: collapse;
+	margin: 16px 0px;
+	text-align: center;
+}
+th, td {
+	border: 1px solid #b0c4de;
+	padding: 8px;
+	width: 80px;
+	text-align: center;
+}
+.btn {
+	background: #4682b4;
+	border: 0;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 1em;
+	padding: 4px 16px;
+	margin: 0px 5px;
+}
+.btn:hover {
+	transform: scale(1.2);
+}
+.errors {
+	color: #dc143c;
+}
+.message {
+	font-size: 2em;
+	color: #0000cd;
+}
+.link{
+	margin-top: 20px;
+	text-align: center;
+}
+#table {
+	margin: auto;
+}
