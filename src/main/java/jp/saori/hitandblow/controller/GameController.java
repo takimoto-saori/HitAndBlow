@@ -93,12 +93,6 @@ public class GameController {
 		//入力した数値を取得し、1桁ずつに分けてchar配列に変換
 		char[] charArray = gameModel.getNumber().toCharArray();
 
-		//入力された桁数と答えの桁数が異なる場合
-		if (charArray.length != digitNum) {
-			model.addAttribute("errorMessage", "桁数が異なっています");
-			return "gamePlay";
-		}
-
 		//charArrayをint型に変換して格納する配列を生成
 		int[] numberArray = new int[digitNum];
 		for (int i = 0; i < digitNum; i++) {
@@ -109,6 +103,12 @@ public class GameController {
 				model.addAttribute("errorMessage", "数字以外は入力できません");
 				return "gamePlay";
 			}
+		}
+
+		//入力された桁数と答えの桁数が異なる場合
+		if (charArray.length != digitNum) {
+			model.addAttribute("errorMessage", "桁数が異なっています");
+			return "gamePlay";
 		}
 
 		//入力された数値に重複がある場合
