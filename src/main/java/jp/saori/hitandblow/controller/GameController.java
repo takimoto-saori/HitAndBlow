@@ -163,7 +163,9 @@ public class GameController {
 
 	@RequestMapping(value = "/play", method = RequestMethod.POST, params = "giveup")
 	public String giveUp(@ModelAttribute GameModel gameModel, Model model) {
+		List<TableModel> tableList = gameModel.getTableList();
 		model.addAttribute("message1",  "残念");
+		model.addAttribute("tableList", tableList);
 		return "gameFinish";
 	}
 
